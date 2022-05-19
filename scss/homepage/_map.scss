@@ -1,0 +1,15 @@
+.map {
+    @include mg-rule(top,12px);
+    @include pd-values(27px,0);
+
+    p {
+        @include mg-rule(top,25px);
+    }
+    
+    h3 {
+        color: map-get($colors, blue_color);
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+}

@@ -1,0 +1,24 @@
+.case-study {
+    @include pd-values(22px,22px);
+
+    @at-root
+    &__contents {
+        @include mg-rule(top,25px);
+        @include flex_properties(space-between,center);
+
+        @at-root
+        &__info {
+            p2 {
+            @include mg-rule(top,28px);
+            }
+        }
+    }
+
+    h3 {
+        color: map-get($colors, blue_color);
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+}

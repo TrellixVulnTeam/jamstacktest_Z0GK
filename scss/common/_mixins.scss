@@ -1,0 +1,96 @@
+@mixin flex_properties($justify, $align) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    @content;
+}
+@mixin mg-rule($dir,$val) {
+    margin-#{$dir}: $val;
+}
+
+@mixin mg_values($t,$r,$b,$l) {
+    margin: $t $r $b $l;
+}
+
+@mixin pd-rule($dir,$val) {
+    padding-#{$dir}: $val;
+}
+
+@mixin pd_values($tb,$lr) {
+    padding: $tb $lr;
+}
+@mixin pd_values4($t,$r,$b,$l) {
+    padding: $t $r $b $l;
+}
+
+@mixin font-icon($icon-code, $icon-size) {
+    content: $icon-code;
+    float: right;
+    font-family: "fontAwesome";
+    font-size: $icon-size;
+    text-indent: 0;
+}
+
+@mixin font-iconafter($icon-code, $icon-size) {
+    content: $icon-code;
+    font-family: "fontAwesome";
+    font-size: $icon-size;
+}
+
+@mixin reverse_breakpoint($device) {
+    @if($device=="large-pc") {
+        @media screen and (max-width: map-get($breakpoints, large-pc)) {
+            @content;
+        }
+    }
+
+    @else if($device=="pc") {
+        @media screen and (max-width: map-get($breakpoints, pc)) {
+            @content;
+        }
+    }
+
+    @else if($device=="mini-pc") {
+        @media screen and (max-width: map-get($breakpoints, mini-pc)) {
+            @content;
+        }
+    }
+
+    @else if($device=="mini-ipad") {
+        @media screen and (max-width: map-get($breakpoints, mini-ipad)) {
+            @content;
+        }
+    }
+
+    @else if($device=="tablet") {
+        @media screen and (max-width: map-get($breakpoints, tablet)) {
+            @content;
+        }
+    }
+
+    @else if($device=="mobile-x") {
+        @media screen and (max-width: map-get($breakpoints, mobile-x)) {
+            @content;
+        }
+    }
+
+    @else if($device=="mobile") {
+        @media screen and (max-width: map-get($breakpoints, mobile)) {
+            @content;
+        }
+    }
+}
+
+@mixin transition-effect() {
+    transition: All ease-in-out 0.3s;
+    -webkit-transition: All ease-in-out 0.3s;
+    -moz-transition: All ease-in-out 0.3s;
+    -ms-transition: All ease-in-out 0.3s;
+    -o-transition: All ease-in-out 0.3s;
+}
+
+@mixin hover-effect() {
+    color: #ff0000;
+}

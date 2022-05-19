@@ -1,0 +1,132 @@
+header {
+    @at-root
+    .header__top {
+        @include pd-values(23px,0);
+        display: flex;
+        justify-content: space-between;
+    h2 {
+        font-size: 27px;
+    }
+
+    @at-root
+    &__toplinks {
+        @include mg-rule(top,22px);
+        @include flex_properties(normal,center);
+        
+        @at-root
+        .social-media {
+            @include flex_properties(space-between,flex-end);
+            flex-basis: 51%;
+
+            @at-root
+            .social-media-title {
+                color: map-get($colors,red_color);
+                font-weight: bold;
+                font-size: 16px
+            }
+
+            @at-root
+            .header-top-contents {
+                flex-basis: 54%;
+                color: map-get($colors,blue_color);
+                font-weight: bold;
+            }
+
+            @at-root
+            .social-links {
+                @include flex_properties(space-between,normal);
+                flex-basis: 38%;
+                li {
+                    a {
+                        text-indent: -9999px;
+                        &::before {
+                            @include font-icon("\f09a",22px);
+                            background-color: map-get($colors,blue_color);
+                            color: map-get($colors,primary_color);
+                            @include pd_values(9px,13px);
+                            border-radius: 100%;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        a {
+                            &::before {
+                                @include font-icon("\f099",16px);
+                                @include pd_values(12px,13px);
+                            }   
+                        }
+                    }
+
+                    &:last-child {
+                        a {
+                            &::before {
+                                @include font-icon("\f167",16px);
+                                @include pd_values(12px,13px);
+                            }   
+                        }
+                    }
+                }
+
+            }
+        }
+
+            span {
+                color: map-get($colors,red_color);
+                font-weight: bold;
+                font-size: 16px;
+                white-space: nowrap;
+            }
+            @at-root
+            .reviews {
+                @include mg-rule(left,30px);
+                flex-basis: 32%;
+                @include flex_properties(space-between,flex-end);
+                a {
+                background-color: map-get($colors,blue_color);
+                color: map-get($colors,primary_color);
+                @include pd_values(10px,7px);
+                border-radius: 20px;
+                font-size: 13px;
+                white-space: nowrap
+                }
+            }
+        }
+
+     @at-root
+     &__bottomlinks {
+        @include mg-rule(top,24px);
+        @include flex_properties(space-between,normal);
+
+        a {
+            @include pd_values(10px,15px);
+            background-color: map-get($colors,blue_color);
+            color: map-get($colors,primary_color);
+        }
+     }
+
+    }
+
+    @at-root
+    .header__bottom {
+        
+            .nav {
+                @include pd-values(15px,28px);
+                @include flex_properties(space-between,normal);
+                background-color:map-get($colors,red_color);
+                
+
+                li {
+                    a {
+                        color: map-get($colors,primary_color);
+                        font-size: 15px;
+                    }
+                }
+            }
+        
+    }
+}
+
+  
+
+    
+
