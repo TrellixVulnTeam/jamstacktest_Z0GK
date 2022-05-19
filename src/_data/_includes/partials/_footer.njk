@@ -1,0 +1,45 @@
+<footer>
+    <div class="footer-headerbar">
+    <div class="wrapper">
+    <p>HomeServe is an independent company separate from your local utility or community</p>
+    </div>
+    </div>
+    <div class="about-us">
+<div class="wrapper">
+<div class="about-us-left">
+<ul>
+  {%- for about in aboutuslinks -%}
+    <li><a href="{{about.href}}" title="{{about.title}}" target="{{about.target}}">{{about.name}}</a></li>
+  {%- endfor -%}
+</ul>
+</div>
+<div class="about-us-right">
+<p><img src="http://placehold.jp/148x118.png" alt="About Us Icons"></p>
+</div>
+</div>
+</div>
+    <div class="footer-top">
+    <div class="wrapper">
+    <div class="footer-top-left">
+      <p class="address">Corporate Office:601 Merritt 7,Norwalk,CT 06851</p>
+      <p class="copyright">&copy; Copyright 2022 HomeServe USA.All rights reserved</p>
+      <ul class="footer-links">
+  {%- for link in footerlinks -%}
+    <li><a href="{{link.href}}" title="{{link.title}}" target="{{link.target}}">{{link.name}}</a></li>
+  {%- endfor -%}
+      </ul>
+      </div>
+      <div class="footer-top-right">
+        <ul class="footer-icons">
+  {%- for icon in footericons -%}
+    <li><a href="{{icon.href}}" title="{{icon.title}}" target="{{icon.target}}">{{icon.name}}</a></li>
+  {%- endfor -%}
+        
+        </ul>
+      </div>
+      </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom-content">We are a full service electrical contractor providing quality workmanship and are a full service electrical contractor providing quality superior service to</p>
+  </div>
+</footer>

@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Facebook",
+      "href": "#FIXME",
+      "name": "facebook",
+      "target": "_blank"
+    },
+    {
+      "title": "Twitter",
+      "href": "#FIXME",
+      "name": "twitter",
+      "target": "_blank"
+    },
+    {
+      "title": "Linked In",
+      "href": "#FIXME",
+      "name": "linkedin",
+      "target": "_blank"
+    },
+    {
+      "title": "Instagram",
+      "href": "#FIXME",
+      "name": "instagram",
+      "target": "_blank"
+    }
+  ]

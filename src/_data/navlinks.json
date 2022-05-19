@@ -1,0 +1,14 @@
+[
+    {
+      "title": "Child 1",
+      "href": "/markdown/child/",
+      "name": "Child 1",
+      "target": "_self"
+    },
+    {
+        "title": "Child 2",
+        "href": "/markdown/child2/",
+        "name": "Child 2",
+        "target": "_self"
+    }
+]

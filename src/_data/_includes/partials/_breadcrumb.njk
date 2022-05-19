@@ -1,0 +1,4 @@
+<div class="breadcrumb-path">
+    {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
+    {{ titleTag }}
+</div>
