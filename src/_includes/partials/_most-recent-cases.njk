@@ -1,0 +1,39 @@
+---
+pagination:
+  data: most-recent-cases
+  size: 6
+  alias: recent
+---
+<div class="recent">
+<div class="wrapper">
+    <h3>Or, browse our most recent studies below:</h3>
+<ul class="browse-cases">
+    {% for i in most-recent-cases -%}
+        <li>
+            <h4>{{ i.title }}</h4>
+            <div class="browse-cases__contents">
+                <figure class="browse-cases__contents__image">
+                    <img src="{{ i.image }}" alt="{{ i.title }}"></figure>
+                    <div class="browse-cases__contents__text">
+                        <div class="problem">
+                            <span class="text-title">problem:</span>
+                            <p>
+                                {{ i.problem }}
+                            </p>
+                        </div>
+                        <div class="solution">
+                            <span class="text-title">problem:</span>
+                            <p>
+                                {{ i.solution }}
+                            </p>
+                        </div>
+                        <div class="browse__contents__text__link">
+                            <a href="#FIXME" title="{{ i.link }}" target="_blank">{{ i.link }}</a>
+                        </div>
+                    </div>
+                </li>
+            {%- endfor %}
+        </ul>
+              {% include "partials/_pagination.njk" %}
+    </div>
+</div>

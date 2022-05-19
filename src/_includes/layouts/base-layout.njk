@@ -43,6 +43,7 @@
     {% include "partials/_header.njk" %}
     <main>
       {{ content | safe }}
+      {% include "partials/_most-recent-cases.njk" %}
     </main>
     {% include "partials/_footer.njk" %}
   </div>
