@@ -3,14 +3,34 @@
 
     @at-root
     &__contents {
+        @include pd-values(0,10px);
         @include mg-rule(top,25px);
-        // @include flex_properties(space-between,center);
+        @include flex_properties(space-around,normal);
 
         @at-root
         &__info {
-            p2 {
-            @include mg-rule(top,28px);
+            @include pd-values(0,50px);
+            flex-basis: 50%;
+
+            @at-root
+            &__p1 {
+                font-size: 20px;
+                line-height: 29px;
+                text-align: right;
             }
+
+            @at-root
+            &__p2 {
+            @include mg-rule(top,24px);
+            font-size: 20px;
+            line-height: 29px;
+            text-align: right;
+            }
+        }
+
+        @include reverse_breakpoint("mini-ipad") {
+            flex-direction: column;
+            row-gap: 20px;
         }
     }
 
@@ -21,4 +41,19 @@
         text-align: center;
     }
 
+    @at-root
+    &__link {
+        @include mg-rule(top,20px);
+        text-align: center;
+        a {
+            @include pd-values(9px,14px);
+            background: map-get($colors,blue_color);
+            color: map-get($colors,primary_color);
+            font-size: 15px;
+            @include transition-effect();
+            &:hover {
+                @include hover-effect();
+            }
+        }
+    }
 }

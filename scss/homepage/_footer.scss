@@ -24,7 +24,11 @@ footer {
                     text-align: center;
                     a {
                         color: map-get($colors,gray_color);
-                        font-size: 18px
+                        font-size: 18px;
+                        @include transition-effect();
+                        &:hover {
+                            @include hover-effect();
+                        }
                     }
                 }
             }
@@ -49,6 +53,20 @@ footer {
                 @include reverse_breakpoint("mini-ipad") {
                     font-size: 9px;
                 }
+                @include reverse_breakpoint("tablet") {
+                    display: block;
+                    font-size: 9px;
+                    text-align: center;
+                }
+                @include transition-effect();
+                &:hover {
+                    @include hover-effect();
+                }
+            }
+
+            @include reverse_breakpoint("tablet") {
+                flex-direction: column;
+                row-gap: 10px;
             }
         }
     }
@@ -56,12 +74,16 @@ footer {
 
     .footer__bottom {
         @include flex_properties(space-around,normal);
-        @include pd-values(60px,60px);
+        @include pd-values4(60px,60px,60px,144px);
         background-color: map-get($colors,red_color);
         color: map-get($colors,primary_color);
 
         a {
         color: map-get($colors,primary_color);
+        @include transition-effect();
+        &:hover {
+            @include hover-effect();
+        }
         }
 
         span {
@@ -97,6 +119,11 @@ footer {
                 font-weight: bold;
                 text-align: center;
             }
+        }
+
+        @include reverse_breakpoint("tablet") {
+            flex-direction: column;
+            row-gap: 50px;
         }
 
     }

@@ -51,6 +51,11 @@ header {
                             color: map-get($colors,primary_color);
                             @include pd_values(9px,13px);
                             border-radius: 100%;
+                            @include transition-effect();
+
+                        }
+                        &:hover::before {
+                            @include hover-effect();
                         }
                     }
 
@@ -78,6 +83,11 @@ header {
             @include reverse_breakpoint("mini-ipad") {
                 flex-basis: 58%;
             }
+
+
+            @include reverse_breakpoint("tablet") {
+                width: 100%;
+            }
         }
 
             span {
@@ -85,11 +95,14 @@ header {
                 font-weight: bold;
                 font-size: 16px;
                 white-space: nowrap;
+                @include reverse_breakpoint("mobile") {
+                    font-size: 10px;
+                }
             }
             @at-root
             .reviews {
                 @include mg-rule(left,30px);
-                flex-basis: 32%;
+                flex-basis: 33%;
                 @include flex_properties(space-between,flex-end);
                 a {
                 background-color: map-get($colors,blue_color);
@@ -98,11 +111,23 @@ header {
                 border-radius: 20px;
                 font-size: 13px;
                 white-space: nowrap;
+                @include transition-effect();
+                &:hover {
+                    @include hover-effect();
+                }
                 }
 
                 @include reverse_breakpoint("mini-pc") {
                     flex-basis: 26%;
                 }
+                @include reverse_breakpoint("tablet") {
+                    width: 100%;
+                }
+            }
+
+            @include reverse_breakpoint("tablet") {
+                flex-direction: column;
+                row-gap: 20px;
             }
         }
 
@@ -115,6 +140,19 @@ header {
             @include pd_values(10px,15px);
             background-color: map-get($colors,blue_color);
             color: map-get($colors,primary_color);
+            @include reverse_breakpoint("tablet") {
+                display: block;
+                text-align: center;
+            }
+            @include transition-effect();
+            &:hover {
+                @include hover-effect();
+            }
+        }
+
+        @include reverse_breakpoint("tablet") {
+            flex-direction: column;
+            row-gap: 20px;
         }
      }
      @include reverse_breakpoint("mini-pc") {
@@ -136,7 +174,8 @@ header {
                     color: map-get($colors,black_color);
                 }
                 @include reverse_breakpoint("tablet") {
-                    display: block;
+                    @include mg-rule(right,auto);
+                    display: inline-block;
                 }
             }
 
@@ -149,17 +188,12 @@ header {
                 }   
             }
 
-            @at-root 
-            .visible {
-                display: flex;
-                flex-direction: column;
-                row-gap: 10px;
-            }
 
             @at-root .menu {
 
                 @include reverse_breakpoint("tablet") {
                     display: none;
+                    text-align: center
                 }
             }
         
@@ -176,11 +210,24 @@ header {
                         @include reverse_breakpoint("mini-ipad") {
                             font-size: 9px;
                         }
+                        @include reverse_breakpoint("tablet") {
+                            font-size: 18px;
+                        }
+                        @include transition-effect();
+                        &:hover {
+                            @include hover-effect();
+                        }
+
+                        @include reverse_breakpoint("tablet") {
+                            &:hover {
+                                color: map-get($colors,primary_color);
+                            }   
+                        }
                     }
                 }
                 @include reverse_breakpoint("tablet") {
                     flex-direction: column;
-                    row-gap: 10px;
+                    row-gap: 20px;
                 }
             }
         

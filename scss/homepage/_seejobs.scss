@@ -7,6 +7,10 @@
 
         a {
             color: map-get($colors,red_color);
+            @include transition-effect();
+            &:hover {
+                @include hover-effect();
+            }
         }
     }
 
@@ -21,6 +25,10 @@
                 background: map-get($colors,blue_color);
                 color: map-get($colors,primary_color);
                 font-size: 15px;
+                @include transition-effect();
+                &:hover {
+                    @include hover-effect();
+                }
                 
             }
         }
