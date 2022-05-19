@@ -191,7 +191,7 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1519px;
+  max-width: 1366px;
   width: 85.8%;
   margin: 0 auto; }
 
@@ -300,6 +300,18 @@ li {
     color: #fff;
     font-size: 15px; }
 
+footer {
+  padding: 59px 0; }
+  footer__top {
+    padding-bottom: 28px; }
+    footer__top__links {
+      padding: 42px 42px;
+      margin-top: 36px; }
+    footer__top__buttons {
+      margin-top: 28px; }
+  footer__bottom {
+    padding: 60px 60px; }
+
 .see-jobs {
   padding: 47px 0; }
   .see-jobs__p2 {
@@ -332,12 +344,7 @@ li {
 .case-study {
   padding: 22px 22px; }
   .case-study__contents {
-    margin-top: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    margin-top: 25px; }
     .case-study__contents__info p2 {
       margin-top: 28px; }
   .case-study h3 {
@@ -345,3 +352,6 @@ li {
     font-size: 30px;
     font-weight: bold;
     text-align: center; }
+
+.recent {
+  text-align: center; }

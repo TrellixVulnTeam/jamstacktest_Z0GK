@@ -4,7 +4,7 @@
     @at-root
     &__contents {
         @include mg-rule(top,25px);
-        @include flex_properties(space-between,center);
+        // @include flex_properties(space-between,center);
 
         @at-root
         &__info {

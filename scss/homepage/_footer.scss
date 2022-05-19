@@ -1,0 +1,23 @@
+footer {
+    @include pd-values(59px,0);
+
+    @at-root
+    &__top {
+        @include pd-rule(bottom,28px);
+        @at-root
+        &__links {
+            @include pd-values(42px,42px);
+            @include mg-rule(top,36px);
+        }
+
+        @at-root
+        &__buttons {
+            @include mg-rule(top,28px);
+        }
+    }
+
+    @at-root
+    &__bottom {
+        @include pd-values(60px,60px);
+    }
+}
