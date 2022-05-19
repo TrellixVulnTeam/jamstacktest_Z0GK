@@ -1,0 +1,25 @@
+{
+  "name": "jamstacktest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurabh-gaonkar/jamstacktest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saurabh-gaonkar/jamstacktest/issues"
+  },
+  "homepage": "https://github.com/saurabh-gaonkar/jamstacktest#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-container": "^3.0.0"
+  }
+}
