@@ -23,6 +23,7 @@ module.exports = function (config) {
     .use(markdownItContainer, "see-jobs")
     .use(markdownItContainer, "see-jobs__p1")
     .use(markdownItContainer, "see-jobs__p2")
+    .use(markdownItContainer, "see-jobs__link")
     .use(markdownItContainer, "click-here")
     .use(markdownItContainer, "map")
     .use(markdownItContainer, "case-study")
