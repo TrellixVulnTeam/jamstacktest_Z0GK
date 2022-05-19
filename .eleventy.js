@@ -30,7 +30,18 @@ module.exports = function (config) {
     let markdownLib = markdownIt(options)
     .use(markdownItAttrs)
     .use(markdownItContainer, "wrapper")
-    .use(markdownItContainer, "see-jobs");
+    .use(markdownItContainer, "see-jobs")
+    .use(markdownItContainer, "see-jobs__p1")
+    .use(markdownItContainer, "see-jobs__p2")
+    .use(markdownItContainer, "click-here")
+    .use(markdownItContainer, "map")
+    .use(markdownItContainer, "case-study")
+    .use(markdownItContainer, "case-study__contents")
+    .use(markdownItContainer, "case-study__contents__info")
+    .use(markdownItContainer, "case-study__contents__info__p1")
+    .use(markdownItContainer, "case-study__contents__info__p2")
+    .use(markdownItContainer, "case-study__contents__info__image")
+    .use(markdownItContainer, "case-study__link");
 
     config.setLibrary("md", markdownLib);
 
