@@ -144,7 +144,7 @@ header {
             .cross {
                 text-indent: -9999px;
                 &::before {
-                    @include font-icon("f00d",23px);
+                    @include font-icon("\f00d",23px);
                     color: map-get($colors,black_color);
                 }   
             }
@@ -156,6 +156,12 @@ header {
                 row-gap: 10px;
             }
 
+            @at-root .menu {
+
+                @include reverse_breakpoint("tablet") {
+                    display: none;
+                }
+            }
         
             .nav {
                 @include pd-values(15px,28px);
@@ -173,7 +179,8 @@ header {
                     }
                 }
                 @include reverse_breakpoint("tablet") {
-                    display: none;
+                    flex-direction: column;
+                    row-gap: 10px;
                 }
             }
         

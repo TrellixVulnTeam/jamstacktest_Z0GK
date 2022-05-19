@@ -323,7 +323,7 @@ li {
 .cross {
   text-indent: -9999px; }
   .cross::before {
-    content: "f00d";
+    content: "";
     float: right;
     font-family: "fontAwesome";
     font-size: 23px;
@@ -334,6 +334,10 @@ li {
   display: flex;
   flex-direction: column;
   row-gap: 10px; }
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none; } }
 
 .header__bottom .nav {
   padding: 15px 28px;
@@ -351,7 +355,8 @@ li {
         font-size: 9px; } }
   @media screen and (max-width: 768px) {
     .header__bottom .nav {
-      display: none; } }
+      flex-direction: column;
+      row-gap: 10px; } }
 
 footer {
   padding: 59px 0; }
