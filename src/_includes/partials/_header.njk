@@ -1,18 +1,39 @@
 <header class="header">
-<div class="header-top">
-<div class="wrapper">
-Call <a href="tel:1-855-336-2465" title="18553362465" target="_blank" class="tel-no">1-855-336-2465</a></div>
-  </div>
-    <div class="header-bottom">
-      <div class="wrapper">
+  <div class="wrapper">
+    <div class="header__top">
       <h1 class="logo">
         <a href="#FIXME" title="Homeserve">
-          <img src="{{ metadata.logo }}" alt="{{ metadata.sitename }}" loading="lazy" />
+          <img src="{{ metadata.logo }}" alt="{{ metadata.sitename }}" loading="lazy"/>
         </a>
-      </h1>
-      <ul class="menu">
-         {% include "partials/navlinks.njk" %}
-      </ul>
+        <div class="header__top__toplinks">
+          <div class="social-media">
+            <span class="social-media-title">Follow Us on Social Media :
+            </span>
+            <ul class="social-links">
+              {%- for social in headericons -%}
+                <li>
+                  <a href="{{ social.href }}" title="{{ social.title }}" target="{{ social.target }}">{{ social.name }}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+          <div class="reviews">
+            <span class="read-reviews">Read Our :</span>
+            <a href="#FIXME" title="Customer Reviews" target="_blank">Customer Reviews</a>
+          </div>
+        </div>
+        <ul class="header__top__bottomlinks">
+          {%- for link in headerlinks -%}
+            <li>
+              <a href="{{ link.href }}" title="{{ link.title }}" target="{{ link.target }}">{{ link.name }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      <div class="header__bottom">
+        <ul class="nav">
+          {% include "partials/navlinks.njk" %}
+        </ul>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
