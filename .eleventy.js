@@ -31,7 +31,7 @@ module.exports = function (config) {
     .use(markdownItContainer, "case-study__contents__info")
     .use(markdownItContainer, "case-study__contents__info__p1")
     .use(markdownItContainer, "case-study__contents__info__p2")
-    .use(markdownItContainer, "case-study__contents__info__image")
+    .use(markdownItContainer, "case-study__contents__image")
     .use(markdownItContainer, "case-study__link");
 
     config.setLibrary("md", markdownLib);

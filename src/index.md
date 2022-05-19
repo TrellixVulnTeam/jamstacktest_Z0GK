@@ -40,7 +40,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat egest
 
 ### Find a case study based on home construction type
 
-:::::::: case-stydy__contents
+:::::::: case-study__contents
 
 ::::::: case-study__contents__info
 
@@ -52,6 +52,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat egest
 ::::::
 
 :::::::
+
 ::::::: case-study__contents__image
 ![Case Study Image](http://placehold.jp/475x267.png)
 :::::::

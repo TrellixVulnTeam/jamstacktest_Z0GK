@@ -1,4 +1,9 @@
-
+---
+pagination:
+  data: most-recent-cases
+  size: 6
+  alias: recent
+---
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
 <html lang="en"> 
@@ -43,7 +48,8 @@
     {% include "partials/_header.njk" %}
     <main>
       {{ content | safe }}
-      {% include "partials/_most-recent-cases.njk" %}
+      
+  {% include "partials/_most-recent-cases.njk" %}
     </main>
     {% include "partials/_footer.njk" %}
   </div>
