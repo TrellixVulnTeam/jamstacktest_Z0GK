@@ -45,15 +45,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat egest
 ::::::: case-study__contents__info
 
 :::::: case-study__contents__info__p1
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat egestas turpis, vitae congue purus suscipit in. Nunc aliquet volutpat lacus, quis feugiat dolor pharetra ut.
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat egestas turpis, vitae congue purus suscipit in. Nunc aliquet volutpat lacus, quis feugiat dolor pharetra ut.
 ::::::
 
 :::::: case-study__contents__info__p2
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat egestas turpis
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat egestas turpis
 ::::::
 
 :::::::

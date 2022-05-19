@@ -30,6 +30,12 @@ header {
                 flex-basis: 54%;
                 color: map-get($colors,blue_color);
                 font-weight: bold;
+                @include reverse_breakpoint("pc") {
+                    flex-basis: 64%;
+                }
+                @include reverse_breakpoint("mini-ipad") {
+                    width: 100%;
+                }
             }
 
             @at-root
@@ -68,6 +74,10 @@ header {
                 }
 
             }
+
+            @include reverse_breakpoint("mini-ipad") {
+                flex-basis: 58%;
+            }
         }
 
             span {
@@ -87,14 +97,18 @@ header {
                 @include pd_values(10px,7px);
                 border-radius: 20px;
                 font-size: 13px;
-                white-space: nowrap
+                white-space: nowrap;
+                }
+
+                @include reverse_breakpoint("mini-pc") {
+                    flex-basis: 26%;
                 }
             }
         }
 
      @at-root
      &__bottomlinks {
-        @include mg-rule(top,24px);
+        @include mg-rule(top,45px);
         @include flex_properties(space-between,normal);
 
         a {
@@ -103,11 +117,45 @@ header {
             color: map-get($colors,primary_color);
         }
      }
+     @include reverse_breakpoint("mini-pc") {
+         flex-direction: column;
+         row-gap: 20px;
+     }
 
     }
 
     @at-root
     .header__bottom {
+        @at-root
+            .ham {
+                    @include mg-rule(right,auto);
+                text-indent: -9999px;
+                display: none;
+                &::before {
+                    @include font-icon("\f0c9",23px);
+                    color: map-get($colors,black_color);
+                }
+                @include reverse_breakpoint("tablet") {
+                    display: block;
+                }
+            }
+
+            @at-root
+            .cross {
+                text-indent: -9999px;
+                &::before {
+                    @include font-icon("f00d",23px);
+                    color: map-get($colors,black_color);
+                }   
+            }
+
+            @at-root 
+            .visible {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+            }
+
         
             .nav {
                 @include pd-values(15px,28px);
@@ -119,7 +167,13 @@ header {
                     a {
                         color: map-get($colors,primary_color);
                         font-size: 15px;
+                        @include reverse_breakpoint("mini-ipad") {
+                            font-size: 9px;
+                        }
                     }
+                }
+                @include reverse_breakpoint("tablet") {
+                    display: none;
                 }
             }
         

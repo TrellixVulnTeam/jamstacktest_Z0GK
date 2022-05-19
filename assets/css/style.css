@@ -187,6 +187,7 @@ li {
 
 /* for fonts  */
 .dark-text {
+  color: #000;
   font-weight: bold; }
 
 /*for wrapper*/
@@ -223,6 +224,12 @@ li {
         flex-basis: 54%;
         color: #2B788B;
         font-weight: bold; }
+        @media screen and (max-width: 1280px) {
+          .header-top-contents {
+            flex-basis: 64%; } }
+        @media screen and (max-width: 995px) {
+          .header-top-contents {
+            width: 100%; } }
       .social-links {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -256,6 +263,9 @@ li {
           font-size: 16px;
           text-indent: 0;
           padding: 12px 13px; }
+      @media screen and (max-width: 995px) {
+        .social-media {
+          flex-basis: 58%; } }
     .header__top__toplinks span {
       color: #A50935;
       font-weight: bold;
@@ -276,8 +286,11 @@ li {
         border-radius: 20px;
         font-size: 13px;
         white-space: nowrap; }
+      @media screen and (max-width: 1024px) {
+        .reviews {
+          flex-basis: 26%; } }
   .header__top__bottomlinks {
-    margin-top: 24px;
+    margin-top: 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -287,6 +300,40 @@ li {
       padding: 10px 15px;
       background-color: #2B788B;
       color: #fff; }
+  @media screen and (max-width: 1024px) {
+    .header__top {
+      flex-direction: column;
+      row-gap: 20px; } }
+
+.ham {
+  margin-right: auto;
+  text-indent: -9999px;
+  display: none; }
+  .ham::before {
+    content: "";
+    float: right;
+    font-family: "fontAwesome";
+    font-size: 23px;
+    text-indent: 0;
+    color: #000; }
+  @media screen and (max-width: 768px) {
+    .ham {
+      display: block; } }
+
+.cross {
+  text-indent: -9999px; }
+  .cross::before {
+    content: "f00d";
+    float: right;
+    font-family: "fontAwesome";
+    font-size: 23px;
+    text-indent: 0;
+    color: #000; }
+
+.visible {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px; }
 
 .header__bottom .nav {
   padding: 15px 28px;
@@ -299,18 +346,94 @@ li {
   .header__bottom .nav li a {
     color: #fff;
     font-size: 15px; }
+    @media screen and (max-width: 995px) {
+      .header__bottom .nav li a {
+        font-size: 9px; } }
+  @media screen and (max-width: 768px) {
+    .header__bottom .nav {
+      display: none; } }
 
 footer {
   padding: 59px 0; }
-  footer__top {
+  footer h4 {
+    color: #2B788B;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; }
+  .footer__top {
     padding-bottom: 28px; }
-    footer__top__links {
-      padding: 42px 42px;
-      margin-top: 36px; }
-    footer__top__buttons {
-      margin-top: 28px; }
-  footer__bottom {
-    padding: 60px 60px; }
+    .footer__top__links {
+      padding: 0 100px;
+      margin-top: 36px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-between;
+      align-items: normal; }
+      .footer__top__links ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: normal;
+        align-items: normal;
+        flex-direction: column;
+        row-gap: 24px; }
+        .footer__top__links ul li {
+          text-align: center; }
+          .footer__top__links ul li a {
+            color: #333333;
+            font-size: 18px; }
+      @media screen and (max-width: 995px) {
+        .footer__top__links {
+          flex-direction: column;
+          row-gap: 20px; } }
+    .footer__top__buttons {
+      margin-top: 63px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-around;
+      align-items: normal; }
+      .footer__top__buttons a {
+        background-color: #2B788B;
+        color: #fff;
+        padding: 10px 10px;
+        font-size: 14px;
+        white-space: nowrap; }
+        @media screen and (max-width: 995px) {
+          .footer__top__buttons a {
+            font-size: 9px; } }
+  footer .footer__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+    padding: 60px 60px;
+    background-color: #A50935;
+    color: #fff; }
+    footer .footer__bottom a {
+      color: #fff; }
+    footer .footer__bottom span {
+      display: block;
+      text-align: center; }
+    footer .footer__bottom__card {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px; }
+      footer .footer__bottom__card__title {
+        font-weight: bold;
+        font-size: 13px; }
+      footer .footer__bottom__card__address {
+        font-size: 13px; }
+        footer .footer__bottom__card__address span {
+          display: block;
+          align-items: center; }
+      footer .footer__bottom__card__contact {
+        display: block;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center; }
 
 .see-jobs {
   padding: 47px 0; }
