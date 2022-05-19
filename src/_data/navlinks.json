@@ -1,14 +1,50 @@
 [
     {
-      "title": "Child 1",
-      "href": "/markdown/child/",
-      "name": "Child 1",
-      "target": "_self"
+      "title": "Home",
+      "href": "#FIXME",
+      "name": "HOME",
+      "target": "_blank"
     },
     {
-        "title": "Child 2",
-        "href": "/markdown/child2/",
-        "name": "Child 2",
-        "target": "_self"
+        "title": "About Us",
+        "href": "#FIXME",
+        "name": "ABOUT US",
+        "target": "_blank"
+    },
+    {
+      "title": "Services",
+      "href": "#FIXME",
+      "name": "SERVICES",
+      "target": "_blank"
+    },
+    {
+        "title": "Service Plans",
+        "href": "#FIXME",
+        "name": "SERVICE PLANS",
+        "target": "_blank"
+    },
+    {
+      "title": "Case Studies",
+      "href": "#FIXME",
+      "name": "CASE STUDIES",
+      "target": "_blank"
+    },
+    {
+        "title": "Homeowner's Library ",
+        "href": "#FIXME",
+        "name": "HOMEOWNER'S LIBRARY",
+        "target": "_blank"
+    },
+    {
+      "title": "Install And Replace",
+      "href": "#FIXME",
+      "name": "INSTALL AND REPLACE",
+      "target": "_blank"
+    },
+    {
+        "title": "Contact",
+        "href": "#FIXME",
+        "name": "CONTACT",
+        "target": "_blank"
     }
 ]

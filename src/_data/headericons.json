@@ -12,15 +12,9 @@
       "target": "_blank"
     },
     {
-      "title": "Linked In",
+      "title": "Youtube",
       "href": "#FIXME",
-      "name": "linkedin",
-      "target": "_blank"
-    },
-    {
-      "title": "Instagram",
-      "href": "#FIXME",
-      "name": "instagram",
+      "name": "youtube",
       "target": "_blank"
     }
   ]

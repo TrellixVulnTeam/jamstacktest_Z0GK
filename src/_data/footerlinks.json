@@ -1,20 +1,32 @@
 [
     {
-      "title": "Privacy Policy",
+      "title": "In The Community",
       "href": "#FIXME",
-      "name": "Privacy Policy",
+      "name": "IN THE COMMUNITY",
       "target": "_blank"
     },
     {
-      "title": "Terms Of Use",
+      "title": "Financing And Rebates",
       "href": "#FIXME",
-      "name": "Terms Of Use",
+      "name": "FINANCING AND REBATES",
       "target": "_blank"
     },
     {
-      "title": "Accessibility Statement",
+      "title": "Current Offers",
       "href": "#FIXME",
-      "name": "Accessibility Statement",
+      "name": "CURRENT OFFERS",
+      "target": "_blank"
+    },
+    {
+      "title": "Service Plans",
+      "href": "#FIXME",
+      "name": "SERVICE PLANS",
+      "target": "_blank"
+    },
+    {
+      "title": "Customer Reviews",
+      "href": "#FIXME",
+      "name": "CUSTOMER REVIEWS",
       "target": "_blank"
     }
   ]
